@@ -15,10 +15,10 @@ function Routing() {
     const [toScoreboard, setToScoreboard] = useState<boolean>(false)
     const [userInfo, setUserInfo] = useState<UserInfo>(
         {
-            username: '',
-            totalQuestion: 0,
-            category: 0,
-            diffculty: '',
+            username: 'user1',
+            totalQuestion: 10,
+            category: 9,
+            diffculty: 'easy',
         }
     )
 
@@ -39,8 +39,6 @@ function Routing() {
         if (path === 'quiz') setToQuiz(true)
         else if (path === 'scoreboard') setToScoreboard(true)
     }
-
-
 
     return (
         <Router>

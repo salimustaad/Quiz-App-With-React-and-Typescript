@@ -27,7 +27,7 @@ const Quiz: React.FC<Props> = ({ userInfo, getUserScore, getToPath }) => {
             )
         }
         getQuiz()
-    }, [quiz.length])
+    },)
 
     // getting Score
     const getScore = (e: React.FormEvent<EventTarget>) => {
