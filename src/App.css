@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.header{
+    height: 40px;
+    padding: 8px 30px;
+    padding-bottom: 10px;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    margin: 50px auto;
+    text-align: right;
+}
+
+.container > .card{
+    margin-bottom: 40px;
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px grey;
+    font-size: large;
+    text-align: left;
+}
+
+.opt-btn{
+    outline: none;
+    border: 0;
+    border: 1px solid transparent;
+    margin: 15px 0;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.opt-btn:hover{
+    border: 1px solid black;
+}
+
+.btn{
+    margin-top: 30px;
+    padding: 12px 30px;
+    color: white;
+    background-color: crimson;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.score-board{
+    text-align: center;
+    font-size: 22px;
+    background-color: white;
+    display: inline-block;
+    margin: 50px 20px;
+    padding: 5px 20px 30px 20px;
+    box-shadow: 0 0 5px grey;
+}
+
+.score-board > h1 + div{
+    text-align: left;
+}
+
+h1{
+    color: crimson;
+}
+
+.score-btn button{
+    margin: 20px;
+    padding: 12px 30px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.btn-menu{
+    color: white;
+    background-color: crimson;
+}
+
+.home-container{
+    text-align: left;
+    font-size: 15px;
+    margin: 30px 20px;
+    padding: 5px 20px 20px 20px;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 5px grey;
+}
+
+.home-container h1, .home-container div{
+    text-align: center;
+}
+
+.home-container input, .home-container select{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 10px 5px;
+    outline: none;
+}
+
+.home-container input{
+    width: 93%;
+}
+
+.home-container select {
+    width: 100%;
+}
