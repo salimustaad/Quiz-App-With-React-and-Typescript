@@ -24,8 +24,8 @@ jobs:
       with:
         cmd: install
    
-    - name: Installing Typescript
-      run: npm install -g typescript
+#     - name: Installing Typescript
+#       run: npm install -g typescript
       
     - name: Creating Build...
       run: yarn build   
