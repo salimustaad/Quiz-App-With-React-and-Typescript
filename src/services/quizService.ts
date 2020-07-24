@@ -1,4 +1,6 @@
-// import { QuizType, mainQuizType } from "../type/QuizType";
+
+
+
 
 async function quizService(totalQuestion: number, category: number, diffculty: string): Promise<QuizType[]> {
 

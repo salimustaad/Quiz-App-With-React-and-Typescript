@@ -15,10 +15,10 @@ function Routing() {
     const [toScoreboard, setToScoreboard] = useState<boolean>(false)
     const [userInfo, setUserInfo] = useState<UserInfo>(
         {
-            username: 'user1',
-            totalQuestion: 10,
-            category: 9,
-            diffculty: 'easy',
+            username: '',
+            totalQuestion: 0,
+            category: 0,
+            diffculty: 'e',
         }
     )
 

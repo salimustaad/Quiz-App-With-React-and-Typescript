@@ -15,19 +15,21 @@ const Quiz: React.FC<Props> = ({ userInfo, getUserScore, getToPath }) => {
     const [userOpt, setUserOpt] = useState<string[]>([])
     const [scoreBoard, setScoreBoard] = useState<boolean>(false)
     const [score, setScore] = useState<number>(0)
+    
 
     useEffect(() => {
         async function getQuiz() {
-            setQuiz(await quizService
+            const data = await quizService
                 (
+                    // 10, 9, 'easy'
                     userInfo.totalQuestion,
                     userInfo.category,
                     userInfo.diffculty
                 )
-            )
+            setQuiz(data)
         }
         getQuiz()
-    },)
+    }, [userInfo])
 
     // getting Score
     const getScore = (e: React.FormEvent<EventTarget>) => {
@@ -73,7 +75,7 @@ const Quiz: React.FC<Props> = ({ userInfo, getUserScore, getToPath }) => {
                                 <button className="card opt-btn" key={index}
                                     onClick={(e) => { setUserOpt([...userOpt, opt]) }}>
                                     {index + 1}. {opt}
-                                    
+
                                 </button>
                             )
                         })
