@@ -23,10 +23,13 @@ jobs:
       uses: Borales/actions-yarn@v2.1.0
       with:
         cmd: install
-        
+   
+    - name: Installing Typescript
+      run: yarn add typescript
+      
     - name: Creating Build...
       run: yarn build   
-        
+      
     - name: Installing Surge... 
       run: npm install -g surge    
     
