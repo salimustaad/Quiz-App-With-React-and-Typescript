@@ -3,5 +3,5 @@
 See Deploy Project [here](http://msr-bootcamp-react-ts-quiz-app.surge.sh/)
 
 ### Run Project
-- npm intall
+- npm install
 - yarn start 
