@@ -13,13 +13,9 @@ const Home: React.FC<Props> = ({ getUserInfo, getToPath }) => {
     let totalQuestion: number = 10
     let category: number = 9
 
-    // let userinfo: UserInfo = {
-    //     username, totalQuestion, category, diffculty
-    // }
-
-    const [userInfo, setUserInfo] = useState<UserInfo>(
-        { username, totalQuestion, category, diffculty }
-    )
+    let userInfo: UserInfo = {
+        username, totalQuestion, category, diffculty
+    }
 
     return (
         <div className="home-container">
@@ -55,8 +51,7 @@ const Home: React.FC<Props> = ({ getUserInfo, getToPath }) => {
                         <button
                             className="btn"
                             onClick={() => {
-                                // userinfo = { username, totalQuestion, category, diffculty }
-                                setUserInfo({ username, totalQuestion, category, diffculty })
+                                userInfo = { username, totalQuestion, category, diffculty }
                                 getUserInfo(userInfo)
                                 getToPath('quiz')
                             }}>
